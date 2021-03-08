@@ -1,9 +1,8 @@
 ### Termos e acordos
 
-Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do
-Manual da Pessoa Estudante da Trybe.
+Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe.
 
-# Boas vindas ao repositório do projeto Carta Misteriosa!
+# Boas vindas ao repositório do projeto Arte com Pixels!
 
 Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
 
@@ -17,8 +16,8 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 - [Entregáveis](#entregáveis)
   - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
   - [Desenvolvimento](#desenvolvimento)
-- [Instruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
   - [Data de Entrega](#data-de-entrega)
+- [Instruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
   - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
   - [Durante o desenvolvimento](#durante-o-desenvolvimento)
 - [Como desenvolver](#como-desenvolver)
@@ -26,71 +25,61 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 - [Requisitos do projeto](#requisitos-do-projeto)
 
     `Requisitos obrigatórios:`
-    - [1 - Deve haver um input com o id="carta-texto" onde o usuário poderá digitar o conteúdo da carta](#1---deve-haver-um-input-com-o-idcarta-texto-onde-o-usuário-poderá-digitar-o-conteúdo-da-carta)
-    - [2 - Deve haver um parágrafo com o id="carta-gerada" onde o usuário verá o resultado de sua carta misteriosa](#2---deve-haver-um-parágrafo-com-o-idcarta-gerada-onde-o-usuário-verá-o-resultado-de-sua-carta-misteriosa)
-    - [3 - Deve haver um botão com id="criar-carta" e ao clicar nesse botão, a carta misteriosa deve ser gerada](#3---deve-haver-um-botão-com-idcriar-carta-e-ao-clicar-nesse-botão-a-carta-misteriosa-deve-ser-gerada)
-    - [4 - Ao criar uma carta através do botão com id="criar-carta", o `input` com id="carta-texto" deve permanecer com o texto digitado](#4---ao-criar-uma-carta-através-do-botão-idcriar-carta-o-input-com-idcarta-texto-deve-permanecer-com-o-texto-digitado)
-    - [5 - Se o usuário não preencher o campo ou preencher com apenas espaços vazios adicionar a mensagem 'Por favor, digite o conteúdo da carta.'](#5---se-o-usuário-não-preencher-o-campo-ou-preencher-com-apenas-espaços-vazios-adicionar-a-mensagem-por-favor-digite-o-conteúdo-da-carta)
-    - [6 - Crie a classe newspaper](#6---crie-a-classe-newspaper)
-    - [7 - Crie a classe magazine1.](#7---crie-a-classe-magazine1)
-    - [8 - Crie a classe magazine2.](#8---crie-a-classe-magazine2)
-    - [9 - Crie a classe medium.](#9---crie-a-classe-medium)
-    - [10 - Crie a classe big.](#10---crie-a-classe-big)
-    - [11 - Crie a classe reallybig.](#11---crie-a-classe-reallybig)
-    - [12 - Crie a classe rotateleft.](#12---crie-a-classe-rotateleft)
-    - [13 - Crie a classe rotateright.](#13---crie-a-classe-rotateright)
-    - [14 - Crie a classe skewleft.](#14---crie-a-classe-skewleft)
-    - [15 - Crie a classe skewright.](#15---crie-a-classe-skewright)
-    - [16 - Adicione as classes de forma aleatória a fim de estilizar as palavras.](#16---adicione-as-classes-de-forma-aleatória-a-fim-de-estilizar-as-palavras)
+    - [1 - Adicione à página o título "Paleta de Cores".](#1---adicione-à-página-o-título-paleta-de-cores)
+    - [2 - Adicione à página uma paleta de quatro cores distintas.](#2---adicione-à-página-uma-paleta-de-quatro-cores-distintas)
+    - [3 - Adicione na página a cor preta ela deve ser a primeira na paleta de cores.](#3---adicione-na-página-a-cor-preta-ela-deve-ser-a-primeira-na-paleta-de-cores)
+    - [4 - Adicione à página um quadro de pixels, com 25 pixels.](#4---adicione-à-página-um-quadro-de-pixels-com-25-pixels)
+    - [5 - Faça com que cada elemento do quadro de pixels possua 40 pixels de largura, 40 pixels de altura e seja delimitado por uma borda preta de 1 pixel.](#5---aplique-a-cada-elemento-do-quadro-de-pixels-deve-possuir-40-pixels-de-largura-e-40-pixels-de-altura-e-ser-delimitado-por-uma-borda-preta-de-1-pixel)
+    - [6 - Definia a cor preta como cor inicial. Ao carregar a página a cor preta já deve estar selecionada para pintar os pixels](#6---executar-o-carregamento-da-página-a-cor-preta-da-paleta-já-deve-estar-selecionada-para-pintar-os-pixels)
+    - [7 - Selecione uma das cores da paleta, ao clicar, a cor selecionada é a que será utilizada para preencher os pixels no quadro.](#7---clicar-em-uma-das-cores-da-paleta-a-cor-selecionada-é-que-vai-ser-usada-para-preencher-os-pixels-no-quadro)
+    - [8 - Clicar em um pixel dentro do quadro após selecionar uma cor na paleta, faz com que o pixel seja preenchido com a cor selecionada.](#8---clicar-em-um-pixel-dentro-do-quadro-após-selecionar-uma-cor-na-paleta-o-pixel-deve-ser-preenchido-com-esta-cor)
+    - [9 - Crie um botão que, ao ser clicado, limpa o quadro preenchendo a cor de todos seus pixels com branco.](#9---crie-um-botão-que-ao-ser-clicado-limpa-o-quadro-preenchendo-a-cor-de-todos-seus-pixels-com-branco)
 
     `Requisitos bônus:`
-    - [17 - Com uma carta misteriosa gerada, adicione a possibilidade de alterar o estilo de uma palavra específica ao clicar nela](#17---com-uma-carta-misteriosa-gerada-adicione-a-possibilidade-de-alterar-o-estilo-de-uma-palavra-específica-ao-clicar-nela)
-    - [18 - Deve haver um parágrafo com o id="carta-contador" onde existirá um contador de palavras](#18---deve-haver-um-parágrafo-com-o-idcarta-contador-onde-existirá-um-contador-de-palavras)
+    - [10 - Faça o quadro de pixels ter seu tamanho definido pelo usuário.](#10---faça-o-quadro-de-pixels-ter-seu-tamanho-definido-pelo-usuário)
+    - [11 - Limite o tamanho do mínimo e máximo do board.](#11---limite-o-tamanho-do-mínimo-e-máximo-do-board)
+    - [12 - Faça com que as cores da paleta sejam geradas aleatoriamente ao carregar a página.](#12---faça-com-que-as-cores-da-paleta-sejam-geradas-aleatoriamente-ao-carregar-a-página)
 - [Depois de terminar o desenvolvimento](#depois-de-terminar-o-desenvolvimento)
 - [Revisando um pull request](#revisando-um-pull-request)
 - [Avisos Finais](#avisos-finais)
 
-# Habilidades
-
-- Manipular o DOM.
-
-- Manipular o Javascript.
-
-- Manipular o CSS.
-
 ---
 
-## Entregáveis
+# Habilidades
 
-Para entregar o seu projeto você deverá criar um _Pull Request_ para este repositório no **GitHub**.
+- Manipular o DOM
 
-Este _Pull Request_ deverá conter, necessariamente, os arquivos `index.html`, `style.css` e `script.js`, que conterão seu código **_HTML_**, **_CSS_** e **_JavaScript_**, respectivamente. ⚠️ É importante que seus arquivos tenham exatamente estes nomes! ⚠️
-
-Você pode adicionar outros arquivos se julgar necessário.
+- Manipular o Javascript
 
 ---
 
 ## O que deverá ser desenvolvido
 
-- Será desenvolvida uma aplicação utilizando JavaScript, HTML5 e CSS3.
+- Você irá implementar uma página web que contém uma paleta de cores funcional que poderá ser utilizada para criar desenhos em pixels. Para isto você irá utilizar `javascript`, `css` e `html`
+
+---
 
 ### Desenvolvimento
 
-- Você irá desenvolver um site que gere cartas misteriosas.
+- Implemente uma paleta de cores usando `javascript`, `css` e `html`.
+
+---
 
 ## Data de Entrega
 
-  - Serão `X` dias de projeto.
-  - Data de entrega para avaliação final do projeto: `DD/MM/YYYY - 14:00h`.
+  - Serão `01` dia de projeto.
+  - Data de entrega para avaliação final do projeto: `18/03/2021 - 14:00h`.
+
+---
 
 ## Instruções para entregar seu projeto:
 
-### Antes de começar a desenvolver:
+### 🗒ANTES DE COMEÇAR A DESENVOLVER:
 
 1. Clone o repositório
-  * `git clone git@github.com:tryber/sd-0x-project-mistery-letter.git`.
+  * `git clone git@github.com:tryber/sd-0x-project-pixels-art.git`.
   * Entre na pasta do repositório que você acabou de clonar:
-    * `sd-0x-project-mistery-letter`
+    * `cd sd-0x-project-pixels-art`
 
 2. Instale as dependências e inicialize o projeto
   * Instale as dependências:
@@ -101,33 +90,39 @@ Você pode adicionar outros arquivos se julgar necessário.
     * Exemplo: `git branch`
   * Se não estiver, mude para a branch `master`
     * Exemplo: `git checkout master`
-  * Agora crie uma branch à qual você vai submeter os `commits` do seu projeto
+  * Agora, crie uma branch onde você vai guardar os `commits` do seu projeto
     * Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
-    * Exemplo: `git checkout -b joaozinho-project-mistery-letter`
+    * Exemplo: `git checkout -b mariazinha-project-pixels-art`
 
-4. Adicione as mudanças ao _stage_ do Git e faça um `commit`
+4. Crie na raiz do projeto os arquivos que você precisará desenvolver:
+  * Verifique que você está na raiz do projeto
+    * Exemplo: `pwd` -> o retorno vai ser algo tipo _/Users/mariazinha/code/**sd-0x-project-pixels-art**_
+  * Crie os arquivos `index.html`, `style.css` e `script.js`
+    * Exemplo: `touch index.html style.css script.js`
+
+5. Adicione as mudanças ao _stage_ do Git e faça um `commit`
   * Verifique que as mudanças ainda não estão no _stage_
-    * Exemplo: `git status` (deve aparecer listada a pasta _joaozinho_ em vermelho)
+    * Exemplo: `git status` (devem aparecer listados os novos arquivos em vermelho)
   * Adicione o novo arquivo ao _stage_ do Git
       * Exemplo:
         * `git add .` (adicionando todas as mudanças - _que estavam em vermelho_ - ao stage do Git)
-        * `git status` (deve aparecer listado o arquivo _joaozinho/README.md_ em verde)
+        * `git status` (devem aparecer listados os arquivos em verde)
   * Faça o `commit` inicial
       * Exemplo:
-        * `git commit -m 'iniciando o projeto x'` (fazendo o primeiro commit)
+        * `git commit -m 'iniciando o projeto. VAMOS COM TUDO :rocket:'` (fazendo o primeiro commit)
         * `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
 
-5. Adicione a sua branch com o novo `commit` ao repositório remoto
-  * Usando o exemplo anterior: `git push -u origin joaozinho-project-mistery-letter`
+6. Adicione a sua branch com o novo `commit` ao repositório remoto
+  * Usando o exemplo anterior: `git push -u origin mariazinha-meme-generator-project`
 
-6. Crie um novo `Pull Request` _(PR)_
-  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-project-mistery-letter/pulls)
+7. Crie um novo `Pull Request` _(PR)_
+  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-project-pixels-art/pulls)
   * Clique no botão verde _"New pull request"_
   * Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
   * Clique no botão verde _"Create pull request"_
-  * Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
+  * Adicione uma descrição para o _Pull Request_, um título claro que o identifique, e clique no botão verde _"Create pull request"_
   * **Não se preocupe em preencher mais nada por enquanto!**
-  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-0x-project-mistery-letter/pulls) e confira que o seu _Pull Request_ está criado
+  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-0x-project-pixels-art/pulls) e confira que o seu _Pull Request_ está criado
 
 ---
 
@@ -143,9 +138,28 @@ Você pode adicionar outros arquivos se julgar necessário.
   3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_
   4. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_
   5. `git push -u nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
-
+  
 ---
-### Como desenvolver
+
+# Como desenvolver
+
+- Este Pull Request deverá conter os arquivos `index.html`, `style.css` e `script.js`, que conterão seu código HTML, CSS e JavaScript, respectivamente.
+
+## ⚠️ É importante que seus arquivos tenham exatamente estes nomes! ⚠️
+
+Você pode adicionar outros arquivos se julgar necessário. Qualquer dúvida, procure a monitoria.
+
+## Dicas
+
+- Você pode pesquisar sobre a propriedade `display` do CSS, [especificamente sobre as opções `table`, `table-row` e `table-cell`](https://stackoverflow.com/questions/29229523/how-and-why-to-use-display-table-cell-css) para te ajudar a posicionar os elementos;
+
+- [Que tal](https://flaviocopes.com/how-to-add-event-listener-multiple-elements-javascript/) usar um _loop_ para adicionar o mesmo evento em vários elementos? [Ou então](https://gomakethings.com/attaching-multiple-elements-to-a-single-event-listener-in-vanilla-js/) a técnica de _event bubbling_ combinada com `classList`?
+
+- Se precisar consultar os valores do _CSS_ de um elemento a partir do _JavaScript_, [dê uma olhada aqui](https://www.w3schools.com/jsref/jsref_getcomputedstyle.asp).
+
+- Para alterar alguma propriedade do _CSS_ de um elemento através do _JavaScript_, dê uma olhada no [atributo `style`](https://www.w3schools.com/jsref/prop_style_backgroundcolor.asp) do elemento.
+
+- Para colocar sua página no [GitHub Pages](https://pages.github.com/), não é necessário remover o conteúdo que já está lá, você pode apenas adicionar essa nova página. Para isso, todo o conteúdo desse projeto deve ser colocado em uma pasta `/projetos/pixels-art`.
 
 ## Linter
 
@@ -170,9 +184,9 @@ Quando é executando o comando `npm run lint`, ele irá avaliar se os seguintes 
 
 ### 💡Veja o exemplo a seguir de como o projeto pode se parecer depois de pronto. Lembre-se que você pode ~~e deve~~ ir além para deixar o projeto com a sua cara e impressionar à todos!
 
-![](mistery-letter-example.gif)
+![exemplo de arte com pixels](./art-with-pixels.gif)
 
-## ⚠️ Leia-os atentamente e siga à risca o que for pedido. Em particular, **atente-se para os nomes de _ids_ que alguns elementos de seu projeto devem possuir**. ⚠️
+## ⚠️ Leia-os atentamente e siga à risca o que for pedido. Em particular, **atente-se para os nomes de _ids_  e _classes_ que alguns elementos de seu projeto devem possuir**. Não troque `ids` por `classes` ou vice-versa ⚠️
 
 O não cumprimento de um requisito, total ou parcialmente, impactará em sua avaliação.
 
@@ -208,274 +222,214 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
 ---
 
-## Requisitos do projeto
-
-* Neste projeto, você implementará um gerador de cartas misteriosas.
-
-**Ou seja, dado um valor digitado em um campo de texto, apresentar as palavras com uma aparência de uma carta onde cada palavra possui uma estilização própria.** 
-
 ## Requisitos Obrigatórios:
 
-### 1 - Deve haver um `input` com o id=\"carta-texto\" onde o usuário poderá digitar o conteúdo da carta
+* Neste projeto, você implementará um editor de arte com pixels.
+
+**Ou seja, dada uma paleta de cores e um quadro composto por pixels, você vai permitir que quem usa consiga pintar o que quiser no quadro!** 👩‍🎨
+
+### 1 - Adicione à página o título "Paleta de Cores".
+
+- O título deverá ficar dentro de uma tag `h1` com o `id` denominado `title`;
+
+- O texto do título deve ser **exatamente** "Paleta de Cores".
 
 **O que será verificado:**
 
-- Será validado que existe um elemento `input` com `id=carta-texto`
+- Verifica se contém um elemento `h1` com o id `title` com o título correto
 
-### 2 - Deve haver um parágrafo com o id=\"carta-gerada\" onde o usuário verá o resultado de sua carta misteriosa
+### 2 - Adicione à página uma paleta de quatro cores distintas.
 
-**O que será verificado:**
+- A paleta de cores deve ser um elemento com `id` denominado `color-palette`, ao passo que cada cor individual da paleta de cores deve possuir a `classe` `color`;
 
-- Será validado que existe um elemento `p` com o `id="carta-gerada"`
+- A cor de fundo de cada elemento da paleta deverá ser a cor que o elemento representa. **A única cor não permitida na paleta é a cor branca.**;
 
-### 3 - Deve haver um botão com id=\"criar-carta\" e ao clicar nesse botão, a carta misteriosa deve ser gerada
+- Cada elemento da paleta de cores deverá ter uma borda preta, sólida e com 1 pixel de largura;
 
-  Pontos importantes:
+- A paleta de cores deverá listar todas as cores disponíveis para utilização lado a lado, e deverá ser posicionada abaixo do título "Paleta de Cores";
 
-    * Cada palavra deve aparecer dentro de uma tag `span`.
-    * As tags `span` devem ser adicionadas como filhas do parágrafo que possui o id `carta-gerada`.
-
-**O que será verificado:**
-
-- Será validado que existe um elemento `button` com `id="criar-carta"`
-
-- Será validado que ao clicar no botão, a carta misteriosa deve ser gerada
-
-### 4 - Ao criar uma carta através do botão com id="criar-carta", o `input` com id="carta-texto" deve permanecer com o texto digitado
+- A paleta de cores não deve conter cores repetidas.
 
 **O que será verificado:**
 
-- Será validado que ao criar uma carta através do botão `id="criar-carta"` o input` com id=\"carta-texto\" permanece com o texto digitado
+- A paleta de cores deve ser um elemento com `id` denominado `color-palette`
 
-### 5 - Se o usuário não preencher o campo ou preencher com apenas espaços vazios adicionar a mensagem 'Por favor, digite o conteúdo da carta.'
+- Verifica se cada cor individual da paleta de cores possui a `classe` chamada `color`.
 
-**O que será verificado:**
+- Verifica se a cor de fundo de cada elemento da paleta é a cor que o elemento representa. **A única cor não permitida na paleta é a cor branca.**
 
-- Será validado que irá exibir a mensagem "Por favor, digite o conteúdo da carta." no elemento `p` com o `id="carta-gerada"
+- Verifica se cada elemento da paleta de cores tem uma borda preta, sólida e com 1 pixel de largura;
 
-### 6 - Crie a classe `newspaper`
+- Verifica se a paleta lista todas as cores disponíveis para utilização, lado a lado.
 
-  Pontos importantes:
+- Verifica se a paleta de cores está posicionada abaixo do título \'Paleta de Cores\'
 
-    * Defina as propriedades:
-      - `background-color` com o valor `antiquewhite`
-      - `font-family` com o valor `Times New Roman`
-      - `font-weight` com o valor `bold`
+- Verifica se a paleta de cores não contém cores repetidas.
 
-**O que será verificado:**
-
-- Será validado se a classe `newspaper` possui a propriedade `background-color` igual a rgb(250, 235, 215)
-
-- Será validado se a classe `newspaper` possui `font-family` igual a "Times New Roman"
-
-- Será validado se a classe `newspaper` possui a propriedade `font-weight` igual a 700
-
-### 7 - Crie a classe `magazine1`.
-
-  Pontos importantes:
-
-    * Defina as propriedades:
-      - `background-color` com o valor `teal`
-      - `color` com o valor `white`
-      - `font-family` com o valor `Verdana`
-      - `font-weight` com o valor `900`
-      - `text-transform` com o valor `uppercase`
+### 3 - Adicione a cor **preta** como a primeira cor da paleta de cores.
 
 **O que será verificado:**
 
-- Será validado se a classe `magazine1` possui a propriedade `background-color` igual a rgb(0, 128, 128)`
+- Verifica se a primeira cor da paleta é preta
 
-- Será validado se a classe `magazine1` possui  a propriedade `color` igual a rgb(255, 255, 255)`
+- Verifica se as demais cores podem ser escolhidas livremente.
 
-- Será validado se a classe `magazine1` possui propriedade `font-family` igual a "Verdana"
+### 4 - Adicione à página um quadro de pixels, com 25 pixels.
 
--  Será validado se a classe `magazine1` possui a propriedade `font-weight` igual a "900"
+- O quadro de "pixels" deve ter 5 elementos de largura e 5 elementos de comprimento;
 
-- Será validado se a classe `magazine1` possui a propriedade `text-transform` igual a "uppercase"`
+- O quadro de "pixels" deve possuir o `id` denominado `pixel-board`, ao passo que cada "pixel" individual dentro do quadro deve possuir a `classe` denominada `pixel`;
 
-### 8 - Crie a classe `magazine2`.
+- A cor inicial dos "pixels" dentro do quadro, ao abrir a página, deve ser branca;
 
-  Pontos importantes:
-
-    * Defina as propriedades:
-      - `background-image` com a imagem `images/pink-pattern.png`
-      - `color` com o valor `fuchsia`
-      - `font-family` com o valor `Verdana`
-      - `font-weight` com o valor `900`
+-  O quadro de "pixels" deve aparecer abaixo da paleta de cores.
 
 **O que será verificado:**
 
-- Será validado se a classe `magazine2` possui a propriedade `background-image` igual a "images/pink-pattern.png"
+- Verifica se o quadro de pixels possui o `id` denominado `pixel-board`
 
-- Será validado se a classe `magazine2` possui a propriedade `color` igual a rgb(255, 0, 255)
+- Verifica se cada pixel individual dentro do quadro possui a `classe` denominada `pixel`.
 
-- Será validado se a classe `magazine2` possui a propriedade `font-family` igual a "Verdana"
+- Verifica se a cor inicial dos pixels dentro do quadro, ao abrir a página, é branca.
 
-- Será validado se a classe `magazine2` possui a propriedade `font-weight` igual a "900"
+- Verifica se o quadro de pixels aparece abaixo da paleta de cores
 
-### 9 - Crie a classe `medium`.
-
-  Pontos importantes:
-
-    * Defina as propriedades:
-      - `font-size` com o valor `20px`
-      - `padding` com o valor `8px`
+### 5 - Faça com que cada elemento do quadro de pixels possua 40 pixels de largura, 40 pixels de altura e seja delimitado por uma borda preta de 1 pixel.
 
 **O que será verificado:**
 
-- Será validado se a classe `medium` possui a propriedade `font-size` igual a "20px"
+- Verifica se o quadro de pixels tem altura e comprimento de 5 elementos
 
-- Será validado se a classe `medium` possui a propriedade `padding` igual a "8px"
+- Verifica se 40 pixels é o tamanho total do elemento, incluindo seu conteúdo e excluindo a borda preta, que deve ser criada à parte.
 
+### 6 - Defina a cor preta como cor inicial. Ao carregar a página a cor preta já deve estar selecionada para pintar os pixels
 
-### 10 - Crie a classe `big`.
+- O elemento da cor preta deve possuir, inicialmente, a `classe` `selected`;
 
-  Pontos importantes:
-
-    * Defina as propriedades:
-      - `font-size` com o valor `30px`
-      - `padding` com o valor `10px`
+- Note que o elemento que deverá receber a classe `selected` deve ser um dos elementos que possuem a classe `color`, como especificado no **requisito 2**.
 
 **O que será verificado:**
 
-- Será validado se a classe `big` possui a propriedade `font-size` igual a "30px"
+- Verifica se o elemento da cor preta possui, inicialmente, a `classe` `selected`
 
-- Será validado se a classe `big` possui a propriedade `padding` igual a "10px"
+- Verifica se nenhuma outra cor da paleta tem a `classe` `selected`
 
-### 11 - Crie a classe `reallybig`.
+### 7 - Clicar em uma das cores da paleta, faz com que ela seja selecionada e utilizada para preencher os pixels no quadro.
 
-  Pontos importantes:
+- A `classe` `selected` deve ser adicionada à cor selecionada na paleta, ao mesmo tempo em que é removida da cor anteriormente selecionada;
 
-    * Defina as propriedades:
-      - `font-size` com o valor `40px`
-      - `padding` com o valor `15px`
+- Somente uma das cores da paleta deve ter a `classe` `selected` de cada vez;
 
-**O que será verificado:**
-
-- Será validado se a classe `reallybig` possui a propriedade `font-size` igual a "40px"
-
-- Será validado se a classe `reallybig` possui a propriedade `padding` igual a "15px"
-
-### 12 - Crie a classe `rotateleft`.
-
-  Pontos importantes:
-
-    * Defina as propriedades:
-      - `transform` com o valor `rotate(-5deg)`
+- Note que os elementos que deverão receber a classe `selected` devem ser os mesmos elementos que possuem a classe `color`, como especificado no **requisito 2**.
 
 **O que será verificado:**
 
-- Será validado se a classe `rotateleft` possui a propriedade `transform` igual a "matrix(0.996195, -0.0871557, 0.0871557, 0.996195, 0, 0)"
+- Verifica se somente uma cor da paleta de cores tem a classe `selected` de cada vez
 
-### 13 - Crie a classe `rotateright`.
+- Verifica se os pixels dentro do quadro não têm a classe `selected` quando são clicados
 
-  Pontos importantes:
-
-    * Defina as propriedades:
-      - `transform` com o valor `rotate(5deg)`
+### 8 - Clicar em um pixel dentro do quadro após selecionar uma cor na paleta, faz com que o pixel seja preenchido com a cor selecionada.
 
 **O que será verificado:**
 
-- Será validado se a classe `rotateright` possui a propriedade `transform` igual a "matrix(0.996195, 0.0871557, -0.0871557, 0.996195, 0, 0)"
+- Verifica se ao carregar a página deve ser possível pintar os pixels de preto
 
-### 14 - Crie a classe `skewleft`.
+- Verifica se após selecionar uma outra cor na paleta, é possível pintar os pixels com essa cor
 
-  Pontos importantes:
+- Verifica se somente o pixel que foi clicado foi preenchido com a cor selecionada, sem influenciar na cor dos demais pixels.
 
-    * Defina as propriedades:
-      - `transform` com o valor `skewX(10deg)`;
-
-**O que será verificado:**
-
-- Será validado se a classe `skewleft` possui a propriedade `transform` igual a "matrix(1, 0, 0.176327, 1, 0, 0)"
-
-### 15 - Crie a classe `skewright`.
-
-  Pontos importantes:
-
-    * Defina as propriedades:
-      - `transform` com o valor `skewX(-10deg)`;
+### 9 - Crie um botão que, ao ser clicado, limpa o quadro preenchendo a cor de todos seus pixels com branco.
 
 **O que será verificado:**
 
-- erá validado se a classe `skewright` possui a propriedade `transform` igual a "matrix(1, 0, -0.176327, 1, 0, 0)"
+- Verifica se o botão tem o `id` denominado `clear-board`
 
-### 16 - Adicione as classes de forma aleatória a fim de estilizar as palavras.
+- Verifica se o botão está posicionado entre a paleta de cores e o quadro de pixels
 
-  Pontos importantes:
+- Verifica se o texto do botão é \'Limpar\'
 
-    * As classes devem ser adicionadas às tags `span` de forma **aleatória**.
-    * Sempre adicione mais de uma classe em uma palavra.
-    * Utilize as classes:
-      - `newspaper`, `magazine1`, `magazine2` (Grupo estilo)
-      - `medium`, `big`, `reallybig` (Grupo tamanho)
-      - `rotateleft`, `rotateright` (Grupo rotação)
-      - `skewleft`, `skewright` (Grupo inclinação)
-
-      Não é necessário utilizar classes de todos os grupos em uma palavra, mas **não** utilize mais de uma classe do mesmo grupo.
-      Ou seja, se você utilizar as classes `magazine1` e `skewright` em uma palavra, as classes `newspaper`, `magazine2`, `skeleft` não devem ser usadas para essa mesma palavra.
-
-**O que será verificado:**
-
-- Será validado se ao criar uma carta ela recebe uma lista de classes aleatórias
-
-- Será validado se ao criar uma segunda carta ela recebe uma lista de classes aleatórias
-
-- Será validado se as classes das duas cartas não são exatamente iguais
+- Verifica se ao clicar no botão, o quadro de pixels é totalmente preenchido de branco
 
 ## Requisitos Bônus:
 
-### 17 - Com uma carta misteriosa gerada, adicione a possibilidade de alterar o estilo de uma palavra específica ao clicar nela
+### 10 - Faça o quadro de pixels ter seu tamanho definido pelo usuário.
 
-  Pontos importantes:
+- Crie um input e um botão que permitam definir um quadro de pixels com tamanho entre 5 e 50. Ao clicar no botão, deve ser gerado um quadro de **N** pixels de largura e **N** pixels de altura, onde **N** é o número inserido no input;
 
-    * Ao clicar em uma palavra, um novo estilo **aleatório** deve ser aplicado.
-    * O número de mudanças deve ser ilimitado;
+ - Ou seja, se o valor passado para o input for 7, ao clicar no botão, vai ser gerado um quadro de 49 pixels (7 pixels de largura x 7 pixels de altura);
+
+- O input deve ter o `id` denominado `board-size` e o botão deve ter o `id` denominado `generate-board`;
+
+- O input só deve aceitar número maiores que zero. Essa restrição **deve** ser feita usando os atributos do elemento `input`;
+
+- O botão deve conter o texto "VQV";
+
+- O input deve estar posicionado entre a paleta de cores e o quadro de pixels;
+
+- O botão deve estar posicionado ao lado do input;
+
+- Se nenhum valor for colocado no input ao clicar no botão, mostre um `alert` com o texto: "Board inválido!";
+
+- O novo quadro deve ter todos os pixels preenchidos com a cor branca.
 
 **O que será verificado:**
 
-- Será validado se ao clicar em uma carta uma nova lista aleatória de classes é gerada
+- Verifica se existe um input com o id `board-size`
 
-- Será validado se ao clicar novamente na mesma carta uma nova lista aleatória de classes é gerada e se a nova lista é diferente da lista anterior
+- Verifica se existe um botão com o id `generate-board`
 
-### 18 - Deve haver um parágrafo com o id=\"carta-contador\" onde existirá um contador de palavras
+- Verifica se o input só aceita número maiores que zero. Essa restrição deve ser feita usando os atributos do elemento `input`
 
-  Pontos importantes:
+- Verifica se o botão contém o texto \'VQV\'
 
-    * Esse contador deve informar a quantidade de palavras presentes na carta misteriosa gerada.
-  
+- Verifica se o input está posicionado entre a paleta de cores e o quadro de pixels
+
+- Verifica se o botão está posicionado ao lado do input
+
+- Verifica se nenhum valor for colocado no input ao clicar no botão, um `alert` é exibido com o texto: \'Board inválido!\'
+
+- Verifica se ao clicar no botão com um valor preenchido, o tamanho do board muda.
+
+- Verifica se o novo quadro tem todos os pixels preenchidos com a cor branca
+
+### 11 - Limite o tamanho mínimo e máximo do board.
+
+- Caso o valor digitado no input `board-sze` fuja do intervalo de 5 a 50, faça:
+
+  - Valor menor que 5, considerar 5 como padrão;
+
+  - Valor maior que 50, considerar 50 como padrão.
+
 **O que será verificado:**
 
-- Será validado que existe um elemento `p` com o `id="carta-contador"`
+- Verifica se a altura máxima do board é 50
 
-- Será validado se ao criar uma carta o elemento `p` com o `id="carta-contador"  é atualizado com o número de palavras da carta (valor numérico).
+- Verifica se a altura do board é 5 quando um valor menor é colocado no input
 
----
+- Verifica se a altura do board é 50 quando um valor maior é colocado no input
 
-## Dicas
+### 12 - Faça com que as cores da paleta sejam geradas aleatoriamente ao carregar a página.
 
-- A propriedade `transform` só funciona em elementos do tipo `block` ou `inline-block`. Então, é sugerido adicionar a propriedade `display: inline-block` para que os elementos spans apresentem o conteúdo da forma correta.
+- A cor preta ainda precisa estar presente e deve ser a primeira na sua paleta de cores.
 
-- [Que tal](https://flaviocopes.com/how-to-add-event-listener-multiple-elements-javascript/) usar um _loop_ para adicionar o mesmo evento em vários elementos? [Ou então](https://gomakethings.com/attaching-multiple-elements-to-a-single-event-listener-in-vanilla-js/) a técnica de _event bubbling_ combinada com `classList`?
+**O que será verificado:**
 
-- Se precisar consultar os valores do _CSS_ de um elemento a partir do _JavaScript_, [dê uma olhada aqui](https://www.w3schools.com/jsref/jsref_getcomputedstyle.asp).
+- Verifica se as cores geradas na paleta são diferentes a cada carregamento da página
 
-- Para alterar alguma propriedade do _CSS_ de um elemento através do _JavaScript_, dê uma olhada no [atributo `style`](https://www.w3schools.com/jsref/prop_style_backgroundcolor.asp) do elemento.
-
-- Para colocar sua página no [GitHub Pages](https://pages.github.com/), não é necessário remover o conteúdo que já está lá, você pode apenas adicionar essa nova página. Para isso, todo o conteúdo desse projeto deve ser colocado em uma pasta `/projetos/pixels-art`.
+- Verifica se a cor preta ainda está presente e é a primeira na sua paleta de cores
 
 ---
 
 ## Depois de terminar o desenvolvimento
 
-Para sinalizar que o seu projeto está pronto para o _"Code Review"_ dos seus colegas, faça o seguinte:
+Para **"entregar"** seu projeto, siga os passos a seguir:
 
 * Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas
   * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**
   * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**
-  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-010-a`
+  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-0x`
 
-Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362189205).
+Se ainda houver alguma dúvida sobre como entregar seu projeto, [aqui tem um video explicativo](https://vimeo.com/362189205).
 
 ⚠ Lembre-se que garantir que todas as _issues_ comentadas pelo **Lint** estão resolvidas! ⚠
 
@@ -485,13 +439,13 @@ Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362
 
 À medida que você e as outras pessoas que estudam na Trybe forem entregando os projetos, vocês receberão um alerta via Slack para também fazer a revisão dos Pull Requests dos seus colegas. Fiquem atentos às mensagens do "Pull Reminders" no Slack!
 
-Use o conteúdo sobre [Code Review](https://course.betrybe.com/real-life-engineer/code-review/) para te ajudar a revisar os _Pull Requests_.
+Use o material que você já viu sobre [Code Review](https://course.betrybe.com/real-life-engineer/code-review/) para te ajudar a revisar os projetos que chegaram para você.
 
 # Avisos Finais
 
 Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência preenchendo o formulário. Leva menos de 3 minutos!
 
-Link: [FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://bit.ly/39qMu3s)
+Link: [FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://be-trybe.typeform.com/to/ZTeR4IbH)
 
 O avaliador automático não necessariamente avalia seu projeto na ordem em que os requisitos aparecem no readme. Isso acontece para deixar o processo de avaliação mais rápido. Então, não se assuste se isso acontecer, ok?
 
