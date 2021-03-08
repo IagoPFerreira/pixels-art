@@ -12,15 +12,15 @@
     "minimist": "1.2.3",
     "mocha": "7.0.1",
     "mochawesome": "4.1.0",
-    "mochawesome-merge": "4.0.1",
+    "mochawesome-merge": "4.0.0",
     "mochawesome-report-generator": "4.1.0"
+  },
+  "scripts": {
+    "lint": "eslint --no-inline-config --ext .js,.jsx --no-error-on-unmatched-pattern -c .eslintrc.json .",
+    "lint:styles": "stylelint **/*.css --config .stylelintrc.json --ignore-disables --allow-empty-input",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "eslint-config-trybe-fundamentals": "1.1.0"
-  },
-  "scripts": {
-    "cypress:open": "cypress open",
-    "lint": "eslint --no-inline-config --ext .js,.jsx --no-error-on-unmatched-pattern -c .eslintrc.json .",
-    "lint:styles": "stylelint **/*.css --config .stylelintrc.json --ignore-disables --allow-empty-input"
   }
 }
