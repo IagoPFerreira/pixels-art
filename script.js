@@ -1,7 +1,15 @@
 const board = document.querySelector('#pixel-board');
-
-const collorsPallete = ['black', 'red', 'orange', 'yellow', 'green', 'blue', 'purple'];
+const collorsPallete = ['black', 'red', 'orange', 'yellow'];
 const pallete = document.querySelector('#color-palette');
+
+function changeClass(elementTarget) {
+  console.log(elementTarget.target);
+  const element = document.getElementsByClassName('selected');
+  for (let index = 0; index < element.length; index += 1) {
+    element[index].setAttribute('class', 'color');
+  }
+  elementTarget.target.className = 'color selected';
+}
 
 function palleteColor(collors) {
   for (let index = 0; index < collors.length; index += 1) {
@@ -12,8 +20,9 @@ function palleteColor(collors) {
       color.className = 'color selected';
     }
     pallete.appendChild(color);
-    
+    color.addEventListener('click', changeClass);
   }
+  console.log(pallete);
 }
 
 function creatBoard(row, cell) {
@@ -30,3 +39,7 @@ function creatBoard(row, cell) {
 
 palleteColor(collorsPallete);
 creatBoard(5, 5);
+
+// console.log(pallete);
+
+// changeSelected(box);
