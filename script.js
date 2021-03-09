@@ -1,6 +1,6 @@
 const board = document.querySelector('#pixel-board');
 
-const collorsPallete = ['black', 'red', 'blue', 'green', 'yellow', 'orange', 'purple', 'blue'];
+const collorsPallete = ['black', 'red', 'orange', 'yellow', 'green', 'blue', 'purple'];
 const pallete = document.querySelector('#color-palette');
 
 function palleteColor(collors) {
@@ -8,7 +8,11 @@ function palleteColor(collors) {
     const color = document.createElement('div');
     color.className = 'color';
     color.style.background = collors[index];
+    if (collors[index] === 'black') {
+      color.className = 'color selected';
+    }
     pallete.appendChild(color);
+    
   }
 }
 
