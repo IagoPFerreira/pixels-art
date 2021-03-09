@@ -1,27 +1,24 @@
 #color-palette {
   height: 50px;
   display: flex;
-  
 }
 
 .color {
   border: 1px solid black;
-  height: auto;
-  width: 3em;
+  height: 40px;
+  width: 40px;
   margin-right: 0.5%;
 }
 
 #pixel-board {
   background-color: turquoise;
-  width: 50%;
-  height: 200px;
   margin-top: 5%;
 }
 
 .pixel {
   background-color: white;
-  width: 5em;
-  height: 5em;
-  
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
 }
 
