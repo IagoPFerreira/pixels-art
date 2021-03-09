@@ -444,7 +444,7 @@ Use o material que você já viu sobre [Code Review](https://course.betrybe.com/
 
 Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência preenchendo o formulário. Leva menos de 3 minutos!
 
-Link: [FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://bit.ly/3ta7hA0)
+Link: [FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://bit.ly/39qMu3s)
 
 O avaliador automático não necessariamente avalia seu projeto na ordem em que os requisitos aparecem no readme. Isso acontece para deixar o processo de avaliação mais rápido. Então, não se assuste se isso acontecer, ok?
 
