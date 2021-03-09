@@ -4,29 +4,25 @@
   justify-content: space-around;
 }
 
-#red {
-  background-color: red;
-  border: 1px solid black;
-  height: auto;
-  width: 20%;
-}
-#green {
-  background-color: green;
-  border: 1px solid black;
-  height: auto;
-  width: 20%;
-}
-#black {
-  background-color: black;
+.color {
   border: 1px solid black;
   height: auto;
   width: 20%;
 }
 
+#black {
+  background-color: black;
+}
+
+#red {
+  background-color: red;
+}
+
+#green {
+  background-color: green;
+}
+
 #blue {
   background-color: blue;
-  border: 1px solid black;
-  height: auto;
-  width: 20%;
 }
 
