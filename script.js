@@ -1,14 +1,18 @@
+window.onload = function () {
+  palleteColor(collorsPallete);
+  creatBoard(5, 5);
+};
+
 const board = document.querySelector('#pixel-board');
 const collorsPallete = ['black', 'red', 'orange', 'yellow'];
 const pallete = document.querySelector('#color-palette');
 
 function changeClass(elementTarget) {
-  console.log(elementTarget.target);
   const element = document.getElementsByClassName('selected');
   for (let index = 0; index < element.length; index += 1) {
     element[index].setAttribute('class', 'color');
   }
-  elementTarget.target.className = 'color selected';
+  elementTarget.target.setAttribute('class', 'color selected');
 }
 
 function palleteColor(collors) {
@@ -22,7 +26,16 @@ function palleteColor(collors) {
     pallete.appendChild(color);
     color.addEventListener('click', changeClass);
   }
-  console.log(pallete);
+}
+
+function changeColor(elementTarget) {
+  const element = document.getElementsByClassName('selected');
+  const color = element[0].getAttribute('style');
+  const pixel = document.querySelectorAll('.pixel');
+  for (let index = 0; index < pixel.length; index += 1) {
+    pixel[index].setAttribute('class', 'color');
+  }
+  elementTarget.target.setAttribute('style', `${color}`);
 }
 
 function creatBoard(row, cell) {
@@ -33,13 +46,7 @@ function creatBoard(row, cell) {
       const rowCell = document.createElement('td');
       rowCell.className = 'pixel';
       tableRow.appendChild(rowCell);
+      rowCell.addEventListener('click', changeColor);
     }
   }
 }
-
-palleteColor(collorsPallete);
-creatBoard(5, 5);
-
-// console.log(pallete);
-
-// changeSelected(box);
