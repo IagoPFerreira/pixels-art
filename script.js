@@ -6,6 +6,8 @@ window.onload = function () {
 const board = document.querySelector('#pixel-board');
 const collorsPallete = ['black', 'red', 'orange', 'yellow'];
 const pallete = document.querySelector('#color-palette');
+const clearBoard = document.querySelector('#clear-board');
+
 
 function changeClass(elementTarget) {
   const element = document.getElementsByClassName('selected');
@@ -32,9 +34,7 @@ function changeColor(elementTarget) {
   const element = document.getElementsByClassName('selected');
   const color = element[0].getAttribute('style');
   const pixel = document.querySelectorAll('.pixel');
-  for (let index = 0; index < pixel.length; index += 1) {
-    pixel[index].setAttribute('class', 'color');
-  }
+  console.log(pixel);
   elementTarget.target.setAttribute('style', `${color}`);
 }
 
@@ -50,3 +50,12 @@ function creatBoard(row, cell) {
     }
   }
 }
+
+function clear(board) {
+  const pixel = document.querySelectorAll('.pixel');
+  for (let index = 0; index < pixel.length; index += 1) {
+    pixel[index].removeAttribute('style');
+  }
+}
+
+clearBoard.addEventListener('click', clear);
