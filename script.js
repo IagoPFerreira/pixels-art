@@ -56,6 +56,7 @@ function clear() {
   const pixel = document.querySelectorAll('.pixel');
   for (let index = 0; index < pixel.length; index += 1) {
     pixel[index].removeAttribute('style');
+    pixel[index].style.background = 'white';
   }
 }
 
