@@ -1,5 +1,6 @@
 window.onload = function () {
   palleteColor(collorsPallete);
+  creatBoard(5);
 };
 
 const board = document.querySelector('#pixel-board');
@@ -23,8 +24,7 @@ function palleteColor(collors) {
       color.className = 'color selected';
       color.style.background = 'black';
     } else {
-      color.style.background = `rgb(${Math.floor(Math.random() * 255)},
-       ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
+      color.style.background = collors[index];
     }
     pallete.appendChild(color);
     color.addEventListener('click', changeClass);
@@ -60,14 +60,19 @@ function clear() {
   }
 }
 
-// function wipeOutBoard() {
-//   document.getElementById('board-size').reset();
+// function wipeOutBoard(boardSizeParameters) {
+//   const boardSize = boardSizeParameters;
+//   console.log(boardSize);
+//   boardSize.setAttribute('type', 'reset');
 // }
 
 function verifyBoardSize(boardSizeParameters) {
   let boardSize = boardSizeParameters;
+  // boardSize.setAttribute('type', 'number');
 
-  if (boardSize <= 5) {
+  if (boardSize <= 0) {
+    alert('Board inválido');
+  } else if (boardSize <= 5) {
     boardSize = 5;
     console.log(boardSize);
     creatBoard(boardSize);
@@ -78,13 +83,12 @@ function verifyBoardSize(boardSizeParameters) {
     boardSize = 50;
     console.log(boardSize);
     creatBoard(boardSize);
-  } else {
-    alert('Board inválido');
   }
 }
 
 function boardGenerator() {
   const boardSize = document.querySelector('#board-size').value;
+  // wipeOutBoard(generate);
   verifyBoardSize(boardSize);
   // document.getElementById('board-size').reset();
 }
