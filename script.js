@@ -70,16 +70,15 @@ function verifyBoardSize(boardSizeParameters) {
     boardSize = 5;
     console.log(boardSize);
     creatBoard(boardSize);
+  } if (boardSize >= 50) {
+    boardSize = 50;
+    console.log(boardSize);
+    creatBoard(boardSize);
   } if (boardSize > 5) {
     console.log(boardSize);
     creatBoard(boardSize);
   }
-  if (boardSize > 50) {
-    boardSize = 50;
-    console.log(boardSize);
-    creatBoard(boardSize);
-    console.log('Chegou aqui');
-  }
+  console.log('Chegou aqui');
 }
 
 function boardGenerator() {
@@ -102,10 +101,10 @@ function generateColor() {
   colorCreate += ')';
   return colorCreate;
 }
+const collorsPallete = ['black', generateColor(), generateColor(), generateColor()];
 
 window.onload = () => {
   palleteColor(collorsPallete);
   creatBoard(5);
   generateColor();
 };
-const collorsPallete = ['black', generateColor(), generateColor(), generateColor()];
