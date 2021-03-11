@@ -1,10 +1,5 @@
-window.onload = function () {
-  palleteColor(collorsPallete);
-  creatBoard(5);
-};
-
 const board = document.querySelector('#pixel-board');
-const collorsPallete = ['black', 'red', 'orange', 'yellow'];
+const collorsPallete = ['black', generateColor(), generateColor(), generateColor()];
 const pallete = document.querySelector('#color-palette');
 const clearBoard = document.querySelector('#clear-board');
 
@@ -93,3 +88,20 @@ const generateBoard = document.getElementById('generate-board');
 generateBoard.addEventListener('click', wipeOutBoard);
 generateBoard.addEventListener('click', boardGenerator);
 clearBoard.addEventListener('click', clear);
+
+function generateColor() {
+  let colorCreate = 'rgb(';
+  colorCreate += Math.floor(Math.random() * 255);
+  colorCreate += ', ';
+  colorCreate += Math.floor(Math.random() * 255);
+  colorCreate += ', ';
+  colorCreate += Math.floor(Math.random() * 255);
+  colorCreate += ')';
+  return colorCreate;
+}
+
+window.onload = () => {
+  palleteColor(collorsPallete);
+  creatBoard(5);
+  generateColor();
+};
