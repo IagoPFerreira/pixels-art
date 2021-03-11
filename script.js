@@ -66,15 +66,15 @@ function verifyBoardSize(boardSizeParameters) {
 
   if (boardSize <= 0) {
     alert('Board inválido!');
-  } if (boardSize <= 5) {
+  } else if (boardSize <= 5) {
     boardSize = 5;
     console.log(boardSize);
     creatBoard(boardSize);
-  } if (boardSize >= 50) {
+  } else if (boardSize >= 50) {
     boardSize = 50;
     console.log(boardSize);
     creatBoard(boardSize);
-  } if (boardSize > 5) {
+  } else {
     console.log(boardSize);
     creatBoard(boardSize);
   }
