@@ -1,5 +1,5 @@
 const board = document.querySelector('#pixel-board');
-const collorsPallete = ['black', generateColor(), generateColor(), generateColor()];
+
 const pallete = document.querySelector('#color-palette');
 const clearBoard = document.querySelector('#clear-board');
 
@@ -44,6 +44,7 @@ function creatBoard(size) {
       tableRow.appendChild(rowCell);
       rowCell.addEventListener('click', changeColor);
     }
+    console.log(index + 1);
   }
 }
 
@@ -64,18 +65,20 @@ function verifyBoardSize(boardSizeParameters) {
   let boardSize = boardSizeParameters;
 
   if (boardSize <= 0) {
-    alert('Board inválido');
-  } else if (boardSize <= 5) {
+    alert('Board inválido!');
+  } if (boardSize <= 5) {
     boardSize = 5;
     console.log(boardSize);
     creatBoard(boardSize);
-  } else if (boardSize > 5) {
+  } if (boardSize > 5) {
     console.log(boardSize);
     creatBoard(boardSize);
-  } else if (boardSize > 50) {
+  }
+  if (boardSize > 50) {
     boardSize = 50;
     console.log(boardSize);
     creatBoard(boardSize);
+    console.log('Chegou aqui');
   }
 }
 
@@ -105,3 +108,4 @@ window.onload = () => {
   creatBoard(5);
   generateColor();
 };
+const collorsPallete = ['black', generateColor(), generateColor(), generateColor()];
