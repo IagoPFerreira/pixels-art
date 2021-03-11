@@ -60,15 +60,13 @@ function clear() {
   }
 }
 
-// function wipeOutBoard(boardSizeParameters) {
-//   const boardSize = boardSizeParameters;
-//   console.log(boardSize);
-//   boardSize.setAttribute('type', 'reset');
-// }
+function wipeOutBoard() {
+  const boardSize = document.getElementById('pixel-board');
+  boardSize.innerHTML = '';
+}
 
 function verifyBoardSize(boardSizeParameters) {
   let boardSize = boardSizeParameters;
-  // boardSize.setAttribute('type', 'number');
 
   if (boardSize <= 0) {
     alert('Board inválido');
@@ -88,11 +86,10 @@ function verifyBoardSize(boardSizeParameters) {
 
 function boardGenerator() {
   const boardSize = document.querySelector('#board-size').value;
-  // wipeOutBoard(generate);
   verifyBoardSize(boardSize);
-  // document.getElementById('board-size').reset();
 }
 
 const generateBoard = document.getElementById('generate-board');
+generateBoard.addEventListener('click', wipeOutBoard);
 generateBoard.addEventListener('click', boardGenerator);
 clearBoard.addEventListener('click', clear);
