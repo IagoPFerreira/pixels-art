@@ -1,4 +1,4 @@
-# Boas vindas ao repositório do projeto Lições Aprendidas
+# Boas vindas ao repositório do projeto Pixels Art
 
 Esse projeto foi desenvolvido como um projeto avaliativo do curso de Desenvolvimento Web da [Trybe](https://www.betrybe.com/?utm_medium=cpc&utm_source=google&utm_campaign=Brand&utm_content=ad03_din_h), o objetivo desse projeto era construir uma aplicação onde seria possivel criar artes pixeladas, as tecnologias usadas para desenvolver esse projeto foram HTML, CSS e JavaScript.
 
