@@ -15,6 +15,7 @@ function palleteColor(collors) {
   for (let index = 0; index < collors.length; index += 1) {
     const color = document.createElement('div');
     color.className = 'color';
+
     if (collors[index] === 'black') {
       color.className = 'color selected';
       color.style.background = 'black';
@@ -92,16 +93,22 @@ generateBoard.addEventListener('click', boardGenerator);
 clearBoard.addEventListener('click', clear);
 
 function generateColor() {
-  let colorCreate = 'rgb(';
-  colorCreate += Math.floor(Math.random() * 255);
-  colorCreate += ', ';
-  colorCreate += Math.floor(Math.random() * 255);
-  colorCreate += ', ';
-  colorCreate += Math.floor(Math.random() * 255);
-  colorCreate += ')';
-  return colorCreate;
+  return `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)},
+  ${Math.floor(Math.random() * 255)})`;
 }
-const collorsPallete = ['black', generateColor(), generateColor(), generateColor()];
+const collorsPallete = [
+  'black', 'rgb(255, 82, 232)', 'rgb(216, 99, 252)', 'rgb(160, 71, 243)',
+  'rgb(76, 14, 126)', 'rgb(175, 39, 69)', 'rgb(255, 0, 0)', 'rgb(207, 100, 12)',
+  'rgb(255, 115, 0)', 'rgb(220, 252, 41)', 'rgb(238, 241, 4)', 'rgb(9, 228, 9)',
+  'rgb(9, 221, 228)', 'rgb(6, 9, 204)', 'rgb(144, 145, 136)', 'rgb(255, 255, 255)'];
+
+const boardSize = document.querySelector('#board-size');
+boardSize.addEventListener('keyup', (event) => {
+  event.preventDefault();
+  if (event.keyCode === 13) {
+    document.querySelector('#generate-board').click();
+  }
+});
 
 window.onload = () => {
   palleteColor(collorsPallete);
