@@ -34,7 +34,9 @@ Passo 3. Clone o projeto:
 git clone git@github.com:IagoPFerreira/pixels-art.git
 ~~~
 
-Passo 4. Após terminado a clonagem, abra o diretório clonado e dê um duplo clique no arquivo `index.html` e o projeto vai abrir em seu navegador, não é necessário instalar mais nada.
+Passo 4. Após terminado a clonagem, abra o diretório clonado e dê um duplo clique no arquivo `index.html` e o projeto vai abrir em seu navegador, não é necessário instalar mais nada.  A aplicação deve se parecer com essa:
+
+![preview](./pixels-art.png)
 
 ---
 
